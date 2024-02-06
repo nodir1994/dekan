@@ -1,0 +1,1 @@
+.markingRatingGradePage .table-row-rating-grade{display:grid;width:100%!important;grid-gap:0;grid-template-columns:50px auto 150px 60px}@media (max-width: 767px){.markingRatingGradePage .table-row-rating-grade{grid-template-columns:50px 200px 50px 60px}}

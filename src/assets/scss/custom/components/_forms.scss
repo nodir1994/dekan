@@ -1,0 +1,527 @@
+//
+// forms.scss
+//
+// ----------------------------------
+@mixin desk {
+  @media (max-width: 1700px) {
+    @content;
+  }
+}
+
+@mixin ipad_pro {
+  @media (max-width: 1299px) {
+    @content;
+  }
+}
+
+@mixin ipad {
+  @media (max-width: 991px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media (max-width: 350px) {
+    @content;
+  }
+}
+
+//-----------------------------------
+[type="tel"],
+[type="url"],
+[type="email"],
+[type="number"] {
+  &::placeholder {
+    text-align: left
+      /*rtl: right*/
+    ;
+  }
+}
+
+.form-check {
+  position: relative;
+  text-align: left
+    /*rtl: right*/
+  ;
+}
+
+
+// checkbox input right
+
+.form-check-right {
+  padding-left: 0;
+  display: inline-block;
+  padding-right: $form-check-padding-start;
+
+  .form-check-input {
+    float: right;
+    margin-left: 0;
+    margin-right: $form-check-padding-start * -1;
+  }
+
+  .form-check-label {
+    display: block;
+  }
+}
+
+// checkbox
+
+.form-checkbox-outline {
+
+  .form-check-input {
+    border-width: 2px;
+    background-color: $card-bg;
+
+    &:active {
+      filter: none;
+    }
+
+    &:checked {
+      background-color: $card-bg !important;
+
+      &[type=checkbox] {
+        background-image: none;
+
+      }
+
+      &:after {
+        position: absolute;
+        content: '\F012C';
+        font-family: "Material Design Icons";
+        top: -4px !important;
+        left: 1px;
+        /*rtl: -4px */
+        font-size: 16px;
+        color: $dark;
+      }
+    }
+  }
+}
+
+// radio
+
+.form-radio-outline {
+  .form-check-input {
+    border-width: 2px;
+    background-color: $card-bg;
+
+    &:active {
+      filter: none;
+    }
+
+    &:checked {
+      background-color: $card-bg !important;
+
+      &[type=checkbox] {
+        background-image: none;
+
+      }
+
+      &:after {
+        position: absolute;
+        content: '\F0765';
+        font-family: "Material Design Icons";
+        top: 6px !important;
+        left: 4px;
+        font-size: 6px;
+      }
+    }
+  }
+}
+
+
+
+// checkbox color
+
+@each $color,
+$value in $theme-colors {
+  .form-check-#{$color} {
+    .form-check-input {
+      &:checked {
+        background-color: $value;
+        border-color: $value;
+      }
+    }
+  }
+
+  .form-radio-#{$color} {
+    .form-check-input {
+      &:checked {
+        border-color: $value;
+        background-color: $value;
+
+        &:after {
+          color: $value;
+        }
+      }
+    }
+  }
+}
+
+.form-check,
+.form-check-input,
+.form-check-label {
+  cursor: pointer;
+  margin-bottom: 0;
+}
+
+
+// Switch sizes
+
+.form-switch-md {
+  font-size: 20px;
+  min-height: 26px;
+  line-height: 26px;
+
+  .form-check-label {
+    font-size: $font-size-base;
+    vertical-align: middle;
+  }
+}
+
+
+.form-switch-lg {
+  font-size: 26px;
+  min-height: 36px;
+  line-height: 36px;
+
+  .form-check-label {
+    font-size: $font-size-base;
+    vertical-align: middle;
+  }
+}
+
+.input-group-text {
+  margin-bottom: 0px;
+}
+
+// card radio
+
+.card-radio {
+  background-color: $card-bg;
+  border: 2px solid $card-border-color;
+  border-radius: $border-radius;
+  padding: 4px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.card-radio-label {
+  display: block;
+}
+
+
+.card-radio-input {
+  display: none;
+
+  &:checked+.card-radio {
+    border-color: $primary !important;
+  }
+}
+
+
+body[data-layout-mode="dark"] {
+
+  // Form Control
+  .form-control {
+    color: $gray-dark-500;
+    background-color: lighten($gray-dark-200, 2%);
+    border: 1px solid $gray-dark-300;
+  }
+
+  // form-select
+  .form-select {
+    color: $gray-dark-500;
+    background-color: lighten($gray-dark-200, 2.5%);
+    border: 1px solid $gray-dark-300;
+    background-image: escape-svg(url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='#{$gray-dark-800}' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/></svg>"));
+  }
+
+  // form-check
+
+  .form-check-input {
+    background-color: $gray-dark-300;
+    border-color: rgba($white, 0.25);
+
+    &:checked {
+      background-color: $form-check-input-checked-bg-color;
+      border-color: $form-check-input-checked-border-color;
+    }
+  }
+
+  // form switch
+
+  .form-switch {
+    .form-check-input {
+      background-image: escape-svg($form-switch-checked-bg-image)
+    }
+  }
+
+  // input group
+  .input-group-text {
+    background-color: $gray-dark-300;
+    border-color: $gray-dark-300;
+    color: $gray-dark-600;
+  }
+
+  .form-control {
+    &::-webkit-file-upload-button {
+      background-color: $gray-dark-300;
+      color: $gray-dark-600;
+    }
+
+    &:hover:not(:disabled):not([readonly])::-webkit-file-upload-button {
+      background-color: $gray-dark-300;
+    }
+  }
+}
+
+
+//-------------START FORM ELEMENTS -----------------------
+
+.ant-select:not(.ant-select-customize-input) .ant-select-selector,
+.ant-input-affix-wrapper {
+  border-radius: $border-radius-sm;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #a9b4c2;
+}
+
+.ant-input {
+  padding: 7px 11px;
+  border-radius: $border-radius-sm;
+  border: 1px solid #a9b4c2;
+}
+
+.ant-space {
+  width: 100%;
+}
+
+.ant-picker {
+  width: 100%;
+  border-radius: $border-radius-sm;
+  padding: 7px 11px;
+  border: 1px solid #a9b4c2;
+}
+
+.ant-space-item {
+  width: 100%;
+}
+
+.ant-select {
+  width: 100% !important;
+}
+
+//-------------END FORM ELEMENTS -----------------------
+
+
+//-------------START FORM LABEL -----------------------
+
+.ant-form {
+  label {
+    font-weight: 600 !important;
+  }
+
+}
+
+//-------------END FORM LABEL -----------------------
+
+
+.form-switch {
+  .form-check-input {
+    width: 2.5em;
+    height: 1.3em;
+
+    &:checked {
+      background-color: #2fbf71;
+      border: 2px solid #ccc;
+    }
+  }
+}
+
+
+//-------------START FORM ITME----------------------
+.form--item {
+  position: relative;
+
+  @include mobile {
+    margin-bottom: 15px;
+  }
+
+  label {
+    position: absolute;
+    cursor: text;
+    z-index: 2;
+    top: 10px;
+    left: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    background: #fff;
+    padding: 0 10px;
+    color: #999;
+    transition: all .3s ease
+  }
+
+  input {
+
+    &:focus+label,
+    &:not(:placeholder-shown)+label {
+      font-size: 11px;
+      top: -8px
+    }
+  }
+
+  .ant-space {
+    &+label {
+      font-size: 11px;
+      top: -8px
+    }
+  }
+}
+
+.ant-select-clear {
+  right: 30px;
+  top: 37%;
+  font-size: 16px;
+
+  &:hover {
+    color: red;
+  }
+}
+
+
+
+//-------------END FORM ITME----------------------
+
+//-----------MODAL FORM SELECT DRAPDOWN----------
+.ant-select-dropdown,
+.ant-picker-dropdown {
+  z-index: 1322;
+}
+
+body.modal-open .ant-select-dropdown,
+.ant-picker-dropdown {
+  z-index: 1330;
+}
+
+//-----------------------------------------------
+
+.ant-form-item-with-help {
+  .ant-form-item-explain {
+    z-index: 1321;
+  }
+
+}
+
+//data picker time
+.ant-picker-time-panel-column::after {
+  height: auto;
+}
+
+//-----------------form upload-----------------
+.ant-upload.ant-upload-select-picture-card {
+  width: 100%;
+  height: auto;
+  border-radius: $border-radius-sm;
+  border: 1px solid #a9b4c2;
+}
+
+.testUpload {
+  width: 100%;
+  height: auto;
+  border-radius: $border-radius-sm;
+  padding: 10px;
+}
+
+//-------------START FORM ITME----------------------
+.form--item {
+  position: relative;
+
+  @include mobile {
+    margin-bottom: 15px;
+  }
+
+  label {
+    position: absolute;
+    cursor: text;
+    z-index: 3;
+    top: 10px;
+    left: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0 8px;
+    color: #999;
+    transition: all .3s ease;
+
+    &::after {
+      position: absolute;
+      content: "";
+      left: 0;
+      top: 5px;
+      width: 100%;
+      height: 4px;
+      background-color: #fff;
+      z-index: -1;
+    }
+  }
+
+  input {
+
+    &:focus+label,
+    &:not(:placeholder-shown)+label {
+      font-size: 11px;
+      top: -8px
+    }
+  }
+
+  .ant-space {
+    &+label {
+      font-size: 11px;
+      top: -8px
+    }
+  }
+}
+
+.ant-select-clear {
+  right: 30px;
+  top: 37%;
+  font-size: 16px;
+
+  &:hover {
+    color: red;
+  }
+}
+
+//select selector uchun ota avloda qo'ylishi kerak
+.height-auto {
+
+  .ant-select:not(.ant-select-customize-input) .ant-select-selector,
+  .ant-input-affix-wrapper {
+    min-height: 38px !important;
+    height: auto !important;
+  }
+}
+
+.modal-data-tip {
+  background-color: #dee2e6;
+  padding: 10px;
+}
+
+.ant-select-disabled.ant-select:not(.ant-select-customize-input) .ant-select-selector {
+  // background-color: #dee2e6;
+  background-color: #dee2e66b;
+  color: rgb(0 0 0 / 64%);
+
+}

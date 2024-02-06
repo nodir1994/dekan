@@ -1,0 +1,1 @@
+.creatEducationYeasrPage .table-row-education-year{display:grid;width:100%!important;grid-gap:0;grid-template-columns:50px 40px 100px 100px 100px auto 80px 60px}@media (max-width: 767px){.creatEducationYeasrPage .table-row-education-year{grid-template-columns:50px 40px 70px 70px 70px 200px 80px 60px}}

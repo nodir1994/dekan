@@ -1,0 +1,1 @@
+.backupPage .table-row{grid-template-columns:auto 250px 250px 80px}@media (max-width: 767px){.backupPage .table-row{grid-template-columns:300px 250px 250px 80px}}.backupPage .table-row th:first-child,.backupPage .table-row td:first-child{justify-content:start}

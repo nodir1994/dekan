@@ -1,0 +1,1 @@
+.crud_career .table-career{display:grid;width:100%!important;grid-gap:0;grid-template-columns:50px auto 180px 100px 140px}@media (max-width: 767px){.crud_career .table-career{grid-template-columns:50px 200px 180px 100px 140px}}

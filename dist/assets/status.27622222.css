@@ -1,0 +1,1 @@
+.student-status-page .table-row{grid-template-columns:50px auto 13% 10% 13% 13% 150px}@media (max-width: 767px){.student-status-page .table-row{grid-template-columns:50px 200px 100px 100px 100px 100px 150px}}.student-status-page .table-row th:last-child,.student-status-page .table-row td:last-child{justify-content:start}

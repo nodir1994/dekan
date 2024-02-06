@@ -1,0 +1,1 @@
+.byRooms .table-modal{grid-template-columns:auto 150px 150px 80px}@media (max-width: 767px){.byRooms .table-modal{grid-template-columns:150px 100px 80px 70}}.byRooms .modal-dialog{max-width:767px!important}

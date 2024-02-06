@@ -1,0 +1,1 @@
+.academicGroupPage .table-row-academic-group{display:grid;width:100%!important;grid-gap:0;grid-template-columns:50px 100px auto 160px 160px 160px 160px}@media (max-width: 767px){.academicGroupPage .table-row-academic-group{grid-template-columns:50px 100px 100px 100px 100px 90px 100px}}

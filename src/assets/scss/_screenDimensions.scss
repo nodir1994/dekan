@@ -1,0 +1,36 @@
+// mixen
+@mixin desk {
+    @media (max-width: $desk) {
+        @content;
+    }
+  }
+  
+  @mixin ipad_pro {
+    @media (max-width: $ipad_pro) {
+        @content;
+    }
+  }
+  
+  @mixin ipad {
+    @media (max-width: $ipad) {
+        @content;
+    }
+  }
+  
+  @mixin mobile {
+    @media (max-width: $mobile) {
+        @content;
+    }
+  }
+  
+  @mixin mini {
+    @media (max-width: $mini) {
+        @content;
+    }
+  };
+
+$desk: 1600px;
+$ipad_pro: 1299px;
+$ipad: 991px;
+$mobile: 767px;
+$mini: 350px;

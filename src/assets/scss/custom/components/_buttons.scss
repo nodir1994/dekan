@@ -1,0 +1,460 @@
+// 
+// _buttons.scss
+// 
+
+button,
+a {
+  outline: none !important;
+}
+
+.btn-warning {
+  color: $white !important;
+}
+
+.btn.bg-gradient {
+  border: none;
+}
+
+//
+// Soft Buttons
+// 
+
+@mixin button-variant-soft($bg) {
+  color: $bg;
+  background-color: rgba($bg, 0.1);
+  border-color: transparent;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $white;
+    background-color: $bg;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 $btn-focus-width rgba($bg, 0.5);
+  }
+}
+
+@each $color,
+$value in $theme-colors {
+  .btn-soft-#{$color} {
+    @include button-variant-soft($value);
+  }
+}
+
+// Soft Light button
+.btn-soft-light {
+  color: $gray-600;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $gray-800;
+  }
+}
+
+// Soft Light button
+.btn-outline-light {
+  color: $dark;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $dark;
+  }
+}
+
+.c-subject-add {
+  background-color: #040622;
+  font-weight: 500;
+
+  &:hover {
+    background-color: lighten(#040622, 5%);
+    color: #fff;
+  }
+}
+
+//
+// Split Dropdown buttons
+// 
+
+// @mixin button-variant-split($bg) {
+//     background-color: lighten($bg, 5%);
+//     border: none;
+// }
+
+// @each $color,
+// $value in $theme-colors {
+//     .btn-#{$color}.dropdown-toggle-split {
+//         @include button-variant-split($value);
+//     }
+// }
+
+.btn-light.dropdown-toggle-split {
+  background-color: darken($light, 3%);
+  ;
+}
+
+// Rounded Buttons
+.btn-rounded {
+  border-radius: 30px;
+}
+
+
+body[data-layout-mode="dark"] {
+
+  // buttons 
+  .btn-light {
+    color: $gray-dark-600;
+    background-color: $gray-dark-300;
+    border-color: $gray-dark-300 !important;
+  }
+
+  .btn-outline-light {
+    color: $gray-dark-500;
+    border-color: $gray-dark-300;
+
+    &:hover {
+      color: $gray-dark-500;
+      background-color: $gray-dark-300;
+      border-color: $gray-dark-300;
+    }
+  }
+
+  .btn-check:focus+.btn-light,
+  .btn-light:focus,
+  .btn-check:focus+.btn-dark,
+  .btn-dark:focus,
+  .btn-check:focus+.btn-outline-light,
+  .btn-outline-light:focus {
+    box-shadow: 0 0 0 $btn-focus-width rgba($gray-dark-300, .5);
+  }
+
+  .btn-soft-dark,
+  .btn-outline-dark {
+    color: $gray-dark-600;
+  }
+
+  // buttons 
+  .btn-dark {
+    background-color: lighten($gray-dark-200, 2%);
+    border-color: lighten($gray-dark-200, 2%);
+  }
+
+  .btn-outline-dark {
+    border-color: lighten($gray-dark-200, 2%);
+
+    &:hover {
+      background-color: lighten($gray-dark-200, 2%);
+      border-color: lighten($gray-dark-200, 2%);
+    }
+  }
+
+  .btn-soft-dark {
+    background-color: rgba($gray-dark-200, 0.25);
+    border-color: rgba($gray-dark-200, 0.25);
+
+    &:hover {
+      background-color: lighten($gray-dark-200, 2%);
+      border-color: lighten($gray-dark-200, 2%);
+    }
+  }
+}
+
+
+//-------------START MY BUTTONS--------------------------
+
+.btns {
+  color: white;
+  outline: none;
+  border: none;
+  padding: 5px 15px;
+  border-radius: $btn-border-radius-mini;
+  transition: .3s ease;
+  font-size: 13px;
+}
+
+.btns1 {
+  color: white;
+  outline: none;
+  border: none;
+  padding: 3px;
+  border-radius: $btn-border-radius-mini;
+  transition: .3s ease;
+  font-size: 13px;
+}
+
+.c-save {
+  background-color: #208b3a;
+
+  &:hover {
+    background-color: darken(#208b3a, 5%);
+    color: #fff;
+  }
+}
+
+.c-delete {
+  background-color: darken(orangered, 10%) !important;
+
+  &:hover {
+    background-color: lighten(orangered, 10%);
+    color: #fff;
+  }
+}
+
+.c-cancel {
+  background-color: darken(#FEB114, 5%);
+
+  &:hover {
+    background-color: lighten(#FEB114, 10%);
+    color: #fff;
+  }
+}
+
+.c-filter {
+  background-color: #00a8e8;
+
+  &:hover {
+    background-color: darken(#00a8e8, 5%);
+    color: #fff;
+  }
+
+}
+
+.c-clear {
+  background-color: #dee2e6;
+  color: #555;
+
+  &:hover {
+    background-color: darken(#dee2e6, 5%);
+    color: #555;
+  }
+
+}
+
+.c-search {
+  background-color: #fb8500;
+
+  &:hover {
+    background-color: darken(#fb8500, 5%);
+    color: #fff;
+  }
+}
+
+.btn-search {
+  color: white;
+  outline: none;
+  border: none;
+  padding: 8px 15px;
+  border-radius: $btn-border-radius-sm;
+  transition: .3s ease;
+  font-size: 13px;
+  width: 100%;
+}
+
+.search-color {
+  background-color: #48cae4;
+
+  &:hover {
+    background-color: darken(#48cae4, 5%);
+    color: #fff;
+  }
+}
+
+.diploma-color {
+  background-color: #0a9396;
+
+  &:hover {
+    background-color: darken(#0a9396, 5%);
+    color: #fff;
+  }
+}
+
+.application-color {
+  background-color: #2ec4b6;
+
+  &:hover {
+    background-color: darken(#2ec4b6, 5%);
+    color: #fff;
+  }
+}
+
+.student-c {
+  background-color: #264965;
+
+  &:hover {
+    background-color: darken(#264965, 5%);
+    color: #fff;
+  }
+}
+
+.black-c {
+  background-color: #f6aa1c;
+
+  &:hover {
+    background-color: darken(#f6aa1c, 5%);
+    color: #fff;
+  }
+}
+
+.back-c {
+  background-color: #00264b;
+
+  &:hover {
+    background-color: darken(#00264b, 5%);
+    color: #fff;
+  }
+}
+
+.done-c {
+  background-color: #7fb800;
+}
+
+.actions-c {
+  background-color: #f1f1f1;
+  border: 2px solid #cccccc;
+  color: #000;
+
+  &:hover {
+    background-color: darken(#7fb800, 5%);
+    color: #fff;
+  }
+}
+
+.actions-h {
+  display: block;
+  padding: 1px 5px;
+  border: 2px solid #cccccc;
+  background-color: darken(#7fb800, 5%);
+  color: #fff;
+}
+
+.actions-r {
+  display: block;
+  padding: 1px 5px;
+  border: 2px solid #cccccc;
+  background-color: darken(#e5383b, 5%);
+  color: #fff;
+}
+
+.actions-s {
+  display: block;
+  padding: 1px 5px;
+  border: 2px solid #cccccc;
+  background-color: darken(#f6aa1c, 5%);
+  color: #fff;
+}
+
+.notDone-c {
+  background-color: #e5383b;
+}
+
+//-------------END MY BUTTONS--------------------------
+
+//------------modal oyna-----------------
+.swal2-confirm.btn-success {
+  margin-right: 10px;
+}
+
+//mobilne icon class
+.icon-text-none {
+  @media (max-width:654px) {
+    display: none;
+  }
+}
+
+
+.b-actions {
+  color: #fff;
+  padding: 5px 7px;
+  border: 2px solid #fff;
+  border-radius: 6px;
+}
+
+.c-delet {
+  background-color: $red;
+
+  &:hover {
+    background-color: darken($red, 5%);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+}
+
+.c-edit {
+  background-color: $green;
+
+  &:hover {
+    background-color: darken($green, 5%);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+}
+
+.c-see {
+  background-color: $blue;
+
+  &:hover {
+    background-color: darken($blue, 5%);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+}
+
+.b-rooms {
+  background-color: #ffa5ab;
+  border: none;
+  padding: 7px 10px;
+
+  &:hover {
+    background-color: darken(#ffa5ab, 10%);
+  }
+}
+
+.b-roomsCurrent {
+  background-color: #8ac926;
+  color: #fff;
+  border: none;
+  padding: 7px 10px;
+
+  &:hover {
+    background-color: darken(#8ac926, 10%);
+  }
+}
+
+.b-prev {
+  background-color: #98c1d9;
+  border: none;
+  color: #fff;
+  border-radius: 12px 0 0 12px;
+  padding: 8px 15px;
+  width: 100%;
+  font-size: 13px;
+
+  &:hover {
+    background-color: darken(#98c1d9, 10%);
+  }
+}
+
+.b-next {
+  background-color: #98c1d9;
+  border: none;
+  color: #fff;
+  border-radius: 0 12px 12px 0;
+  padding: 8px 15px;
+  width: 100%;
+  font-size: 13px;
+
+  &:hover {
+    background-color: darken(#98c1d9, 10%);
+  }
+}
+
+.btn-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button:disabled {
+  cursor: no-drop;
+  background-color: #cfd5db !important;
+}

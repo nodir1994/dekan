@@ -1,0 +1,1 @@
+.curriculum-page .table-row{grid-template-columns:auto 24% 290px 100px 70px}@media (max-width: 991px){.curriculum-page .table-row{grid-template-columns:200px 200px 290px 100px 70px}}.curriculum-page .table-row td:first-child,.curriculum-page .table-row th:first-child{justify-content:start}

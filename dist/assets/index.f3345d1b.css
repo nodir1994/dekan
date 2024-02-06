@@ -1,0 +1,1 @@
+.reportByTeacherPage .table-row{grid-template-columns:50px auto 220px 170px 300px 180px}@media (max-width: 767px){.reportByTeacherPage .table-row{grid-template-columns:50px 200px 180px 140px 200px 150px}}.reportByTeacherPage .table-row th:last-child,.reportByTeacherPage .table-row td:last-child{justify-content:start}

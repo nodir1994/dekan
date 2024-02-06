@@ -1,0 +1,72 @@
+.myMessagePage {
+    .nav-tabs-custom {
+      color: #fff;
+      .nav-item .nav-link.active {
+        color: #000000;
+        background-color: #fff;
+        border-radius: 0.5rem 0.5rem 0 0;
+        height: 100%;
+        &::after {
+          background: #fff;
+        }
+      }
+    }
+    .post-type {
+      display: flex;
+      align-items: center;
+      .list-inline {
+        .number-posts {
+          background-color: #586f7c;
+          border-radius: $btn-border-radius-mini;
+          color: #ffffff;
+        }
+      }
+    }
+    .card-message {
+      background-color: $table-th-bg;
+      border-top-left-radius: .5rem;
+      border-top-right-radius: .5rem;
+      .nav-link {
+        color: #ffffff;
+      }
+    }
+    .messageDate {
+        h5 {
+          margin-bottom: 20px;
+        }
+      }
+      .lineDate {
+        border-top: 2px solid #cccccc;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        span {
+          position: absolute;
+          top: -12px;
+          background-color: #fff;
+          padding: 0 10px;
+        }
+      }
+      
+      .ctext-wrap {
+        display: flex;
+        margin-bottom: 10px;
+      }
+      .ctext-wrap-content {
+        padding: 12px 20px;
+        background-color: #f5f6f8;
+        border-radius: 0 8px 8px 8px;
+        color: #000;
+        position: relative;
+        margin-left: 10px;
+        &::before {
+          content: "";
+          position: absolute;
+          border: 5px solid transparent;
+          border-right-color: #f5f6f8;
+          border-top-color: #f5f6f8;
+          left: -10px;
+          top: 0;
+        }
+      }
+  }

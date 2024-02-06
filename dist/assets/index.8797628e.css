@@ -1,0 +1,1 @@
+.lessonsPage .table-row{grid-template-columns:50px auto 250px 250px 150px}@media (max-width: 767px){.lessonsPage .table-row{grid-template-columns:50px 250px 250px 250px 150px}}.lessonsPage .content-table th:last-child,.lessonsPage .content-table td:last-child{justify-content:left}

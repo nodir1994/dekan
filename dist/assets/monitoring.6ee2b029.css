@@ -1,0 +1,1 @@
+.monitoring-competition-page .table-row{grid-template-columns:50px auto 20% 12% 12% 12% 10% 5% 90px}@media (max-width: 767px){.monitoring-competition-page .table-row{grid-template-columns:50px 40px 200px 100px 100px 100px 90px 100px 90px}}.monitoring-competition-page .table-row th:last-child,.monitoring-competition-page .table-row td:last-child{justify-content:start}

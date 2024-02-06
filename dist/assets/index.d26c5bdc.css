@@ -1,0 +1,1 @@
+.markingLessonPairPage .table-row{display:grid;width:100%!important;grid-gap:0;grid-template-columns:50px 60px 100px auto 150px 80px 60px}@media (max-width: 767px){.markingLessonPairPage .table-row{grid-template-columns:50px 60px 100px 150px 150px 80px 60px}}

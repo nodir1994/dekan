@@ -1,0 +1,1 @@
+.special-page .table-row{grid-template-columns:50px 100px auto 300px 140px 70px 60px}@media (max-width: 767px){.special-page .table-row{grid-template-columns:50px 100px 200px 200px 140px 70px 60px}}.special-page .table-row th:nth-last-child(2),.special-page .table-row td:nth-last-child(2){justify-content:center}

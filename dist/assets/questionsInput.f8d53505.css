@@ -1,0 +1,1 @@
+.examResultsPage .table-row{grid-template-columns:50px auto}.examResultsPage .student-result{grid-template-columns:100px auto}.examResultsPage .table-vertical td{display:flex;align-items:center;padding:12px 15px}.examResultsPage .table-vertical td:first-child{display:flex;justify-content:right}.examResultsPage .answerTrue{background-color:#c2dfe3!important}

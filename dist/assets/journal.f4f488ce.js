@@ -1,0 +1,1 @@
+import{bR as n}from"./index.3390162f.js";const r=n();async function c(t){try{const{data:a}=await r({url:"/api/attendance-journal",method:"GET",params:t});return a}catch(a){throw a}}async function e(t){try{const{data:a}=await r({url:"/api/academic-groups/attendance",method:"GET",params:t});return a}catch(a){throw a}}export{e as a,c as g};

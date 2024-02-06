@@ -1,0 +1,1 @@
+.performancePage .table-row{grid-template-columns:50px 130px auto 250px 140px 100px 100px}@media (max-width: 767px){.performancePage .table-row{grid-template-columns:50px 130px 200px 250px 100px 90px 60px}}

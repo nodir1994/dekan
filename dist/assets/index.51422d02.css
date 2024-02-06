@@ -1,0 +1,1 @@
+.transfer-page .table-row{grid-template-columns:40px 50px auto 15% 15% 100px}@media (max-width: 767px){.transfer-page .table-row{grid-template-columns:40px 50px 250px 100px 100px 100px}}.transfer-page .table-row th:last-child,.transfer-page .table-row td:last-child{justify-content:start}

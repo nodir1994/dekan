@@ -1,0 +1,1 @@
+.student-list-page .table-row{grid-template-columns:5% 7% 9% auto 10% 10% 10% 10% 7% 10%}@media (max-width: 991px){.student-list-page .table-row{grid-template-columns:50px 100px 120px 200px 140px 100px 100px 100px 140px 170px}}.student-list-page .table-row td:last-child,.student-list-page .table-row th:last-child{justify-content:start}

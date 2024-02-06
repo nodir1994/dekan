@@ -1,0 +1,173 @@
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Calendar */
+.calendar {
+  overflow: hidden;
+  border-radius: 7px;
+}
+
+.calendar__heading,
+.calendar__content {
+  margin-bottom: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+  >li {
+    border: 1px solid $calendar-color-border;
+    width: 16.6666%;
+
+    button {
+      height: 30px;
+    }
+
+    .calendar-day-content {
+      min-height: 100px;
+    }
+  }
+}
+
+.calendar__heading {
+  .calendar__item {
+    justify-content: center;
+  }
+}
+
+.calendar__item {
+  background-color: $calendar-color-header;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  font-size: 16px !important;
+  font-weight: 500;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 10px 45% 10px 5px;
+  transition: all 0.3s;
+  color: $color-white;
+
+  i {
+    font-size: 12px;
+  }
+
+  &.current {
+    background-color: $calendar-color-gray-default;
+  }
+
+  &.is-today {
+    background-color: $color-black;
+    color: $color-white;
+  }
+
+  &:hover {
+    background-color: darken($calendar-color-header, 8%);
+    color: $color-white;
+  }
+}
+
+.calendar__header {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  padding: 15px 10px;
+  background-color: $calendar-color-gray-default;
+
+  a {
+    padding: 10px 30px;
+    background-color: $calendar-color-header;
+    color: $color-white;
+    margin: 5px;
+
+    &:last-child {
+      border-radius: 0 5px 5px 0;
+    }
+
+    &:first-child {
+      border-radius: 5px 0 0 5px;
+    }
+  }
+
+  .nextPrev {
+    width: 200px;
+  }
+}
+
+.calendar__title {
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.calendar__heading {
+  background-color: $calendar-color-gray !important;
+
+  .calendar__item {
+    height: 30px;
+    background-color: $calendar-color-gray;
+    color: $color-black;
+    font-size: 14px !important;
+    font-weight: 600;
+  }
+}
+
+.calendar__content {
+  position: relative;
+  background-color: $color-white;
+
+  .calendar__item {
+    font-size: 14px;
+    cursor: pointer;
+  }
+}
+
+/* Todolist */
+.todolist {
+  margin: 1rem 0px;
+  overflow: hidden;
+  border-radius: 7px;
+  background-color: $color-white;
+}
+
+.todolist__header {
+  font-size: 1.5rem;
+  padding: 10px 15px;
+}
+
+/* Animation */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+
+.sessons {
+  text-decoration: none;
+  padding: 0;
+
+  li {
+    border: 2px solid $calendar-color-header;
+    border-radius: 5px;
+    margin: 2px 2px 10px 2px;
+    text-align: left;
+    padding: 3px;
+    transition: all .3s;
+
+    a {
+      font-size: 12px;
+      line-height: 16px;
+      display: inline-block;
+    }
+
+    &:hover {
+      background-color: $calendar-color-gray;
+    }
+  }
+}

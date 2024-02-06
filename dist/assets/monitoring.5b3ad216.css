@@ -1,0 +1,1 @@
+.monitoring-training .table-row{grid-template-columns:50px auto 200px 140px 140px 190px 100px 100px}@media (max-width: 767px){.monitoring-training .table-row{grid-template-columns:50px 40px 200px 100px 100px 100px 90px 100px}}.monitoring-training .table-row th:last-child,.monitoring-training .table-row td:last-child{justify-content:start}

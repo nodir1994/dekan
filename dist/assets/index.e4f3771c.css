@@ -1,0 +1,1 @@
+.certificatePage .table-row{display:grid;width:100%!important;grid-gap:0;grid-template-columns:50px auto 80px 140px 190px 250px 120px 120px 90px 90px}@media (max-width: 767px){.certificatePage .table-row{grid-template-columns:50px 200px 80px 120px 100px 300px 100px 100px 70px 70px}}

@@ -1,0 +1,1 @@
+.apply-order-page .table-row{grid-template-columns:40px 50px auto 17% 17% 100px}@media (max-width: 767px){.apply-order-page .table-row{grid-template-columns:40px 50px 250px 100px 100px 100px}}.apply-order-page .table-row th:nth-child(2),.apply-order-page .table-row td:nth-child(2){justify-content:center}

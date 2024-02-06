@@ -1,0 +1,1 @@
+.table-row-diploma-list{display:grid;width:100%!important;grid-gap:0;grid-template-columns:50px auto 250px 140px 150px 180px 70px}@media (max-width: 767px){.table-row-diploma-list{grid-template-columns:50px 200px 200px 140px 150px 180px 70px}}

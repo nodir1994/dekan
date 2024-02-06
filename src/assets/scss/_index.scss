@@ -1,0 +1,188 @@
+body {
+  h5>a {
+    color: #70d6ff;
+
+    &:hover {
+      color: darken(#70d6ff, 20%);
+    }
+  }
+}
+
+.wrap-table {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: start;
+}
+
+.text-webkit-box,
+.collapse__block label {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+
+//-------------text colors--------------------
+
+.c-gray {
+  color: $gray-700;
+}
+
+.element-count {
+  display: inline-block;
+  background-color: $white;
+  padding: 5px 20px;
+  border-radius: .5rem;
+  box-shadow: 0 2px 8px rgb(18 17 36 / 4%), 0 4px 32px rgb(18 17 36 / 8%);
+}
+
+//-------------student-status-----------------
+.student-status {
+  display: none;
+  background-color: $white;
+  position: absolute;
+  color: $gray-900;
+  top: 13px;
+  left: 15px;
+  padding: 10px 20px;
+  border-radius: 0 0.5rem 0.5rem 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.s-status {
+  &:hover {
+    transition: .5s;
+
+    .student-status {
+      display: block;
+    }
+  }
+}
+
+
+
+
+
+
+//-------------text colors--------------------
+
+.c-gray {
+  color: $gray-700;
+}
+
+
+//-------------student-status-----------------
+
+
+
+//-----------colors-----------------
+body {
+  .scientific_practice {
+    background-color: #fdffb6 !important;
+  }
+
+  .credit_system {
+    background-color: #a0c4ff !important;
+  }
+
+  .vacation {
+    background-color: #ffadad !important;
+  }
+
+  .graduation {
+    background-color: #caffbf !important;
+  }
+
+  .state_attestation {
+    background-color: #9bf6ff !important;
+  }
+
+  .qualification_practice {
+    background-color: #ffd6a5 !important;
+  }
+
+  .attestation {
+    background-color: #9ef01a !important;
+  }
+
+  .theoretical {
+    background-color: #ffffff !important;
+  }
+}
+
+//---------main menyu-----------------
+.main-menu {
+  .card {
+    opacity: 0.8;
+    transition: 0.3s ease;
+
+    &:hover {
+      opacity: 1;
+
+      .card-footer {
+        .footer-text {
+          animation: shake 1s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+          transform: translate3d(0, 0, 0);
+        }
+      }
+    }
+
+    .card-body {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      i {
+        color: $table-th-bg;
+        font-size: 5rem;
+      }
+    }
+
+    .card-footer {
+      text-align: center;
+      background-color: $sidebar-dark-bg;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 600;
+      padding: 10px 15px;
+      border-radius: 0 0 0.6rem 0.6rem;
+    }
+  }
+}
+
+//-------------------yes now colors -----------------------
+.confirmationYes {
+  background-color: #80ed99;
+  padding: 3px 7px;
+  border-radius: 0.5rem;
+}
+
+.confirmationNow {
+  background-color: #ffa6c1;
+  padding: 3px 7px;
+  border-radius: 0.5rem;
+}
+
+//--------------jadvaldagi linklar uchun------------------
+.tableLink {
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    i {
+      font-size: 15px;
+      transition: 0.6s;
+    }
+  }
+}
+
+//---------topbar drap dpwn menu end--------------
+
+//-------------aledrt natification----------------
+
+// .swal2-container.swal2-center>.swal2-popup {
+//   // position: absolute;
+//   // top: -50%;
+// }

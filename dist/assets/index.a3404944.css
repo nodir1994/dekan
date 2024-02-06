@@ -1,0 +1,1 @@
+.attendance-setting-page .table-row{grid-template-columns:150px auto 300px 80px 60px}@media (max-width: 767px){.attendance-setting-page .table-row{grid-template-columns:150px 200px 200px 80px 60px}}.attendance-setting-page .table-row th:first-child,.attendance-setting-page .table-row td:first-child{justify-content:start}.attendance-setting-page .havola:hover{cursor:pointer}

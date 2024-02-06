@@ -1,0 +1,1 @@
+.auditoriumPage .table-row{grid-template-columns:50px 40px auto 100px 120px 80px 110px 60px}@media (max-width: 767px){.auditoriumPage .table-row{grid-template-columns:50px 40px 200px 70px 80px 80px 110px 60px}}

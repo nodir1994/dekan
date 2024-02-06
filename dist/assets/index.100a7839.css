@@ -1,0 +1,1 @@
+.table-row-gived{display:grid;width:100%!important;grid-gap:0;grid-template-columns:40px auto 140px 140px 150px 200px 160px 120px}@media (max-width: 767px){.table-row-gived{grid-template-columns:70px auto 250px 140px 120px}}

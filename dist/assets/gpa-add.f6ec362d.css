@@ -1,0 +1,1 @@
+.gpaEddPage .table-row{grid-template-columns:40px 50px auto 80px 140px 150px 70px 60px 60px}@media (max-width: 767px){.gpaEddPage .table-row{grid-template-columns:40px 50px 200px 100px 100px 100px 80px 80px 80px}}.gpaEddPage .table-row th:nth-last-child(1),.gpaEddPage .table-row td:nth-last-child(1){justify-content:start}.modal-data-tip{background-color:#dee2e6;padding:10px}

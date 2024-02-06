@@ -1,0 +1,1 @@
+.transfer-vacation-page .table-row{grid-template-columns:40px 40px auto 18% 18% 140px}@media (max-width: 767px){.transfer-vacation-page .table-row{grid-template-columns:40px 40px 250px 120px 120px 140px}}.transfer-vacation-page .table-row th:last-child,.transfer-vacation-page .table-row td:last-child{justify-content:start}

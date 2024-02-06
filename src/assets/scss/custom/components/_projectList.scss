@@ -1,0 +1,37 @@
+.panel-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width:419px) {
+        flex-direction: column;
+        align-items: unset;
+    }
+    .panel-toggles {
+        display: flex;
+        @media (max-width:419px) {
+            justify-content: flex-end;
+            margin-top: 10px;
+        }
+    }
+}
+.panel-header-bg {
+    padding:  0;
+    background-color: $sidebar-dark-bg !important;
+    .card-body {
+        padding: 0.7rem 1rem;
+        .card-title {
+            color: #ffffff !important;
+            font-size: 14px;
+            @media (max-width:419px) {
+            justify-content: flex-end;
+            margin-top: 10px;
+        }
+        }
+    }
+    
+}
+
+.form-label {
+    margin-bottom: 0;
+}

@@ -1,0 +1,1 @@
+.plansPage .table-row{grid-template-columns:40px auto 100px 80px 120px 100px}@media (max-width: 767px){.plansPage .table-row{grid-template-columns:40px 200px 100px 80px 100px 100px}}

@@ -1,0 +1,1 @@
+.semester-page .table-row{grid-template-columns:50px 10% 10% auto 15% 20% 80px 70px}@media (max-width: 767px){.semester-page .table-row{grid-template-columns:50px 100px 70px auto 120px 200px 80px 70px}}.semester-page .table-row td:first-child,.semester-page .table-row th:first-child{justify-content:start}

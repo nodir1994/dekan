@@ -1,0 +1,1 @@
+.teacherListPage .table-row-teacher-list{display:grid;width:100%!important;grid-gap:0;grid-template-columns:50px 400px auto 200px 150px 150px}@media (max-width: 767px){.teacherListPage .table-row-teacher-list{grid-template-columns:50px 400px 200px auto auto 120px}}.teacherListPage .modal-dialog{max-width:991px}
